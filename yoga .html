@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Yoga and Meditation</title>
+
+    <style>
+        /* General Styling */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f5f8f2;
+            color: #333333;
+        }
+
+        /* Header */
+        header {
+            background-color: #315c4c;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav {
+            background-color: #dce9df;
+            text-align: center;
+            padding: 15px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #315c4c;
+            margin: 10px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #b07845;
+        }
+
+        /* Welcome Section */
+        .hero {
+            background-color: #e5efe5;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .hero h2 {
+            color: #315c4c;
+            font-size: 30px;
+        }
+
+        .hero p {
+            font-size: 18px;
+        }
+
+        /* Sections */
+        section {
+            padding: 30px 20px;
+            text-align: center;
+        }
+
+        section h2 {
+            color: #315c4c;
+        }
+
+        /* Cards */
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .card {
+            background-color: white;
+            width: 250px;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px #cccccc;
+            box-sizing: border-box;
+        }
+
+        .card img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .card h3 {
+            color: #49745e;
+        }
+
+        /* Schedule Table */
+        table {
+            width: 90%;
+            margin: auto;
+            border-collapse: collapse;
+            background-color: white;
+        }
+
+        th, td {
+            border: 1px solid #b8cbbb;
+            padding: 12px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #315c4c;
+            color: white;
+        }
+
+        /* Membership Button */
+        .button {
+            display: inline-block;
+            background-color: #315c4c;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .button:hover {
+            background-color: #b07845;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #315c4c;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            nav a {
+                display: inline-block;
+                margin: 8px;
+            }
+
+            .card {
+                width: 100%;
+                max-width: 350px;
+            }
+
+            table {
+                width: 100%;
+                font-size: 13px;
+            }
+
+            th, td {
+                padding: 7px;
+            }
+
+            .hero h2 {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Peaceful Life Yoga</h1>
+        <p>Relax Your Mind, Refresh Your Body</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#yoga">Yoga Poses</a>
+        <a href="#meditation">Meditation</a>
+        <a href="#instructors">Instructors</a>
+        <a href="#schedule">Schedule</a>
+        <a href="#membership">Membership</a>
+        <a href="#articles">Articles</a>
+    </nav>
+
+    <!-- Home Section -->
+    <div class="hero" id="home">
+        <h2>Welcome to Peaceful Life Yoga</h2>
+        <p>Discover peace, balance, and happiness through yoga
+        and meditation.</p>
+        <a href="#membership" class="button">Join Our Classes</a>
+    </div>
+
+    <!-- Yoga Poses -->
+    <section id="yoga">
+        <h2>Our Yoga Poses</h2>
+
+        <div class="container">
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=500"
+                     alt="Yoga practice">
+                <h3>Mountain Pose</h3>
+                <p>Improves posture and body balance.</p>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=500"
+                     alt="Yoga stretching">
+                <h3>Tree Pose</h3>
+                <p>Helps improve concentration and balance.</p>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?w=500"
+                     alt="Yoga exercise">
+                <h3>Relaxation Pose</h3>
+                <p>Helps relax the body and reduce stress.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Meditation -->
+    <section id="meditation">
+        <h2>Meditation Techniques</h2>
+
+        <div class="container">
+            <div class="card">
+                <h3>Breathing Meditation</h3>
+                <p>Focus on slow and gentle breathing to calm your mind.</p>
+            </div>
+
+            <div class="card">
+                <h3>Mindfulness</h3>
+                <p>Pay attention to the present moment without distraction.</p>
+            </div>
+
+            <div class="card">
+                <h3>Guided Meditation</h3>
+                <p>Follow an instructor's instructions to relax your mind.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instructors -->
+    <section id="instructors">
+        <h2>Our Instructors</h2>
+
+        <div class="container">
+            <div class="card">
+                <h3>Ananya Sharma</h3>
+                <p>Yoga Instructor</p>
+                <p>Experience: 5 Years</p>
+            </div>
+
+            <div class="card">
+                <h3>Rahul Kumar</h3>
+                <p>Meditation Trainer</p>
+                <p>Experience: 4 Years</p>
+            </div>
+
+            <div class="card">
+                <h3>Priya Reddy</h3>
+                <p>Fitness and Yoga Coach</p>
+                <p>Experience: 3 Years</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Class Schedule -->
+    <section id="schedule">
+        <h2>Class Schedule</h2>
+
+        <table>
+            <tr>
+                <th>Day</th>
+                <th>Class</th>
+                <th>Time</th>
+            </tr>
+
+            <tr>
+                <td>Monday</td>
+                <td>Beginner Yoga</td>
+                <td>7:00 AM</td>
+            </tr>
+
+            <tr>
+                <td>Wednesday</td>
+                <td>Meditation</td>
+                <td>6:00 PM</td>
+            </tr>
+
+            <tr>
+                <td>Friday</td>
+                <td>Power Yoga</td>
+                <td>7:00 AM</td>
+            </tr>
+
+            <tr>
+                <td>Sunday</td>
+                <td>Relaxation Yoga</td>
+                <td>8:00 AM</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Membership Plans -->
+    <section id="membership">
+        <h2>Membership Plans</h2>
+
+        <div class="container">
+            <div class="card">
+                <h3>Basic Plan</h3>
+                <h2>₹499/month</h2>
+                <p>Yoga classes for beginners.</p>
+                <a href="#contact" class="button">Join Now</a>
+            </div>
+
+            <div class="card">
+                <h3>Standard Plan</h3>
+                <h2>₹999/month</h2>
+                <p>Yoga and meditation classes.</p>
+                <a href="#contact" class="button">Join Now</a>
+            </div>
+
+            <div class="card">
+                <h3>Premium Plan</h3>
+                <h2>₹1499/month</h2>
+                <p>All classes with personal guidance.</p>
+                <a href="#contact" class="button">Join Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Wellness Articles -->
+    <section id="articles">
+        <h2>Wellness Articles</h2>
+
+        <div class="container">
+            <div class="card">
+                <h3>Benefits of Yoga</h3>
+                <p>Learn how yoga can improve flexibility,
+                balance, and general well-being.</p>
+            </div>
+
+            <div class="card">
+                <h3>Importance of Meditation</h3>
+                <p>Discover simple meditation practices
+                for relaxation and mindfulness.</p>
+            </div>
+
+            <div class="card">
+                <h3>Healthy Lifestyle</h3>
+                <p>Build healthy habits with regular exercise,
+                rest, and balanced nutrition.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: info@peacefullifeyoga.com</p>
+        <p>Phone: 9876543210</p>
+        <p>Join us to begin your wellness journey!</p>
+    </section>
+</body>
+</html>
+
+
+

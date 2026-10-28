@@ -1,0 +1,195 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ElectroMart - Electronics Catalog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>ElectroMart</h1>
+        <p>Your One-Stop Electronics Store</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#products">Products</a>
+        <a href="#compare">Compare</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Welcome Section -->
+    <section id="home" class="welcome">
+        <h2>Welcome to ElectroMart</h2>
+        <p>Discover the latest laptops, smartphones,
+           accessories and smart devices at great prices.</p>
+    </section>
+
+    <!-- Category Filters -->
+    <section id="products">
+        <h2>Our Products</h2>
+
+        <input type="radio" name="category" id="all" checked>
+        <label for="all">All Products</label>
+
+        <input type="radio" name="category" id="laptops">
+        <label for="laptops">Laptops</label>
+                 <input type="radio" name="category" id="phones">
+        <label for="phones">Smartphones</label>
+
+        <input type="radio" name="category" id="accessories">
+        <label for="accessories">Accessories</label>
+
+        <input type="radio" name="category" id="smart">
+        <label for="smart">Smart Devices</label>
+
+        <!-- Product Cards -->
+        <div class="product-container">
+
+            <div class="product-card laptop">
+                <span class="discount">20% OFF</span>
+                <img src="C:\Users\Dell\Pictures\Best-laptops-in-2021-7-things-to-consider-when-buying-a-laptop.jpg"width=400" height="500 alt="Laptop">
+                <h3>ProBook Laptop</h3>
+                <p>Intel Core i5, 16GB RAM</p>
+                <p>512GB SSD, 15.6-inch Display</p>
+                <p class="old-price">₹65,000</p>
+                <p class="price">₹52,000</p>
+                <a href="#laptop-details" class="button">
+                    View Details
+                </a>
+            </div>
+
+            <div class="product-card phone">
+                <span class="discount">15% OFF</span>
+                <img src="C:\Users\Dell\Pictures\1140-iphone-15.jpg width="500" height="400" alt="Smartphone">
+                <h3>Smart X Phone</h3>
+                <p>8GB RAM, 128GB Storage</p>
+                <p>50MP Camera, OLED Display</p>
+                <p class="old-price">₹30,000</p>
+                <p class="price">₹25,500</p>
+                <a href="#phone-details" class="button">
+                    View Details
+                </a>
+            </div>
+
+            <div class="product-card accessory">
+                <span class="discount">10% OFF</span>
+                <img src="https://placehold.co/300x200?text=Headphones"
+                     alt="Wireless Headphones">
+                <h3>Wireless Headphones</h3>
+                <p>Bluetooth 5.3</p>
+                <p>Noise Isolation, 30-hour Battery</p>
+                <p class="old-price">₹2,000</p>
+                <p class="price">₹1,800</p>
+                <a href="#headphone-details" class="button">
+                    View Details
+                </a>
+            </div>
+
+            <div class="product-card smart-device">
+                <span class="discount">12% OFF</span>
+                <img src="https://placehold.co/300x200?text=Smartwatch"
+                     alt="Smartwatch">
+                <h3>Fit Smartwatch</h3>
+                <p>Heart Rate and Activity Tracking</p>
+                <p>Water Resistant, Bluetooth</p>
+                <p class="old-price">₹5,000</p>
+                <p class="price">₹4,400</p>
+                <a href="#watch-details" class="button">
+                    View Details
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Product Comparison Table -->
+    <section id="compare">
+        <h2>Product Comparison</h2>
+
+        <table>
+            <tr>
+                <th>Specification</th>
+                <th>ProBook Laptop</th>
+                <th>Smart X Phone</th>
+                <th>Fit Smartwatch</th>
+            </tr>
+            <tr>
+                <td>Processor</td>
+                <td>Intel Core i5</td>
+                <td>Octa-Core</td>
+                <td>Smart Chip</td>
+            </tr>
+            <tr>
+                <td>Memory</td>
+                <td>16GB RAM</td>
+                <td>8GB RAM</td>
+                <td>Built-in Memory</td>
+            </tr>
+            <tr>
+                <td>Storage</td>
+                <td>512GB SSD</td>
+                <td>128GB</td>
+                <td>Built-in Storage</td>
+            </tr>
+            <tr>
+                <td>Price</td>
+                <td>₹52,000</td>
+                <td>₹25,500</td>
+                <td>₹4,400</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Product Details -->
+    <section class="details">
+        <h2>Product Details</h2>
+
+        <div id="laptop-details" class="detail-box">
+            <h3>ProBook Laptop</h3>
+            <p>Processor: Intel Core i5</p>
+            <p>RAM: 16GB</p>
+            <p>Storage: 512GB SSD</p>
+            <p>Display: 15.6 inches</p>
+            <p>Price: ₹52,000</p>
+        </div>
+
+        <div id="phone-details" class="detail-box">
+            <h3>Smart X Phone</h3>
+            <p>RAM: 8GB</p>
+            <p>Storage: 128GB</p>
+            <p>Camera: 50MP</p>
+            <p>Display: OLED</p>
+            <p>Price: ₹25,500</p>
+        </div>
+
+        <div id="headphone-details" class="detail-box">
+            <h3>Wireless Headphones</h3>
+            <p>Connectivity: Bluetooth 5.3</p>
+            <p>Battery: Up to 30 hours</p>
+            <p>Feature: Noise isolation</p>
+            <p>Price: ₹1,800</p>
+        </div>
+
+        <div id="watch-details" class="detail-box">
+            <h3>Fit Smartwatch</h3>
+            <p>Features: Activity tracking</p>
+            <p>Connectivity: Bluetooth</p>
+            <p>Feature: Water resistance</p>
+            <p>Price: ₹4,400</p>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <footer id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: support@electromart.com</p>
+        <p>Phone: 98765 43210</p>
+        <p>&copy; 2026 ElectroMart. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
